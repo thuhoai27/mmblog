@@ -28,7 +28,7 @@ twitter_username: jekyllrb
 github_username: thuhoai27
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate

@@ -1,0 +1,94 @@
+// 변수 정의
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$text-color: #333;
+$background-color: #fff;
+
+// 기본 스타일
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background: $background-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// 헤더 스타일
+.site-header {
+    background: $primary-color;
+    padding: 1rem 0;
+    
+    .site-title {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .site-nav {
+        float: right;
+        
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+// 컨텐츠 영역 스타일
+.content {
+    padding: 2rem 0;
+}
+
+// 푸터 스타일
+.site-footer {
+    background: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+// 포스트 목록 스타일
+.post-list {
+    list-style: none;
+    padding: 0;
+    
+    li {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    .post-title {
+        font-size: 1.5rem;
+        margin: 0 0 0.5rem;
+        
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+    
+    .post-meta {
+        color: #666;
+        font-size: 0.9rem;
+    }
+} 
