@@ -21,7 +21,7 @@ layout: default
     <!-- 페이징 네비게이션 -->
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">&laquo; 이전</a>
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">&laquo; 이전</a>
       {% endif %}
 
       <span class="page_number">
@@ -29,7 +29,7 @@ layout: default
       </span>
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">다음 &raquo;</a>
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next">다음 &raquo;</a>
       {% endif %}
     </div>
   {% endif %}
